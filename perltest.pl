@@ -1,6 +1,7 @@
-#!/usr/bin/perl
-@lines = `perldoc -u -f atan2`;
-foreach (@lines) {
-	s/\w>([^>]+)>/\U$1/g;
-	print;
+#!/usr/bin/perl -w
+$line = <STDIN>;
+if ($line eq "\n") {
+	print "That was just a blank line!\n";
+} else {
+	print "That line of input was: $line";
 }
