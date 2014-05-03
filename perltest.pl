@@ -1,7 +1,3 @@
 #!/usr/bin/perl -w
-$line = <STDIN>;
-if ($line eq "\n") {
-	print "That was just a blank line!\n";
-} else {
-	print "That line of input was: $line";
-}
+$text = "a line of text\n"; # Or the same thing from <STDIN>
+chomp($text); # Gets rid of the newline character
