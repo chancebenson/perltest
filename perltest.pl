@@ -1,7 +1,6 @@
 #!/usr/bin/perl
-
-#print "Hello, world!\n";
-
-use 5.010;
-
-say "Hello World!";
+@lines = 'perldoc -u -f atan2';
+foreach (@lines) {
+	s/\w>([^>]+)>/\U$1/g;
+	print;
+}
